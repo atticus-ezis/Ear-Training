@@ -1,0 +1,130 @@
+.result-image {
+    display: none; /* Initially hide both images */
+    width: 100%; /* Increased size of the graphics */
+    height: 100%; /* Increased size of the graphics */
+    position: absolute; /* Position the images relative to the graphics container */
+    top: 20%; /* Adjust vertical position as needed */
+    right: 0; /* Position images horizontally centered */
+    
+}
+
+.results-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 9999;
+}
+
+body {
+    position:relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://ear--training.s3.us-west-1.amazonaws.com/ear+dojo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: 25% auto 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for better contrast */
+    border-radius: 10px;
+    position: relative;
+    min-height: 400px;
+}
+
+#PlayInterval {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#retry {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+#a-nextpage{
+    text-decoration: none;
+}
+
+#level2 {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#guess-selection {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#result, #rightAnswer, #score, #guess_count {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#graphics {
+    position: relative;
+    top: 300%;
+    right: 10%;
+}
+
+.result-image {
+    width: 300px;
+    height: 300px;
+    margin: 0 10px;
+    top: -300px;
+    left: 60%;   
+}
+
+.results-window {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+button#a-retry a {
+    text-decoration: none;
+    color: inherit;
+}

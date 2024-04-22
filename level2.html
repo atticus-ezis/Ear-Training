@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ear Training Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+            <div id="Play Interval">Level 2</div>
+            <button onclick="playSound()">Play</button>
+            <audio id="sound" controls></audio>
+            
+            <div id="guess-selection">
+                <label>Select your guess:</label><br>
+                <input type="radio" id="guess1" name="guess" value="Octave">
+                <label for="guess1">Octave</label><br>
+                <input type="radio" id="guess2" name="guess" value="Perfect 4th">
+                <label for="guess2">Perfect 4th</label><br>
+                <input type="radio" id="guess3" name="guess" value="Perfect 5th">
+                <label for="guess3">Perfect 5th</label><br>
+                <input type="radio" id="guess4" name="guess" value="Major 3rd">
+                <label for="guess1">Major 3rd</label><br>
+                <input type="radio" id="guess5" name="guess" value="Minor 3rd">
+                <label for="guess2">Minor 3rd</label><br>
+            </div>
+
+            <button onclick="submitGuess()">Submit</button>
+
+        <div id="result"></div>
+        <div id="rightAnswer">Correct Answer: <span id="Answer"></span></div>
+        <div id="score">Percentage: <span id="percentage">0%</span></div>
+        <div id="guess_count">Score: <span id="score_display"></span></div>
+
+        <button onclick="resetSubmit()">Next Interval</div>
+
+        <div id="graphics">
+            <img id="correctImage" class="result-image" src="https://ear--training.s3.us-west-1.amazonaws.com/green+check.png" alt="Correct">
+            <img id="incorrectImage" class="result-image"src="https://ear--training.s3.us-west-1.amazonaws.com/red+x.png" alt="Incorrect">
+        </div>
+        
+        <div id="resultsWindow" class="results-window" >
+            <h2>Results</h2>
+            <p id="resultPercent"></p>
+            <p id="resultScore"></p>
+            <p id="resultPassFail"></p>
+            <button id="level2" onclick="gameReset()">Keep Improving</button>
+            <a href="index.html" id="a-nextpage"><button id="retry">Level 1</button></a>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
