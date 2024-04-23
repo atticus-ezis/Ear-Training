@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ear Training Game</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/Ear-Training/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="game-container">
-            <div id="Play Interval">Play Interval</div>
+            <div id="PlayInterval"><b>Play Interval</b></div>
             <button onclick="playSound()">Play</button>
             <audio id="sound" controls></audio>
             
             <div id="guess-selection">
-                <label>Select your guess:</label><br>
+                <h1 style="font-weight: bold; font-size: 18px;">Select your guess:</h1>
                 <input type="radio" id="guess1" name="guess" value="Octave">
                 <label for="guess1">Octave</label><br>
                 <input type="radio" id="guess2" name="guess" value="Perfect 4th">
@@ -25,7 +26,7 @@
             <button onclick="submitGuess()">Submit</button>
 
         <div id="result"></div>
-        <div id="rightAnswer">Correct Answer: <span id="Answer"></span></div>
+        <div id="rightAnswer"><b>Correct Answer: </b><span id="Answer"></span></div>
         <div id="score">Percentage: <span id="percentage">0%</span></div>
         <div id="guess_count">Score: <span id="score_display"></span></div>
 

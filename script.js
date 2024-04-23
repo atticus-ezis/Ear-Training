@@ -29,12 +29,12 @@ audio.addEventListener('click',playSound)
 function playSound() {
     // if no sound is selected play a random sound
     if (!selectedSound) {
-        if (window.location.href.endsWith("level2.html")) {
+        if (document.getElementById("guess5")) {
             let randomIndex = Math.floor(Math.random() * (sounds2.length));
             selectedSound = sounds2[randomIndex]
             audio.src = selectedSound;
         
-        } else if (window.location.href.endsWith("index.html")) {
+        } else {
             let randomIndex = Math.floor(Math.random() * (sounds.length));
             selectedSound = sounds[randomIndex];
             audio.src = selectedSound; 
@@ -51,7 +51,7 @@ function playSound() {
     
 function submitGuess() {
     // User can't guess until sound is heard
-    if (soundplayed && notRun && totalGuesses < 4) {
+    if (soundplayed && notRun && totalGuesses < 11) {
     // Get the selected value from the radio buttons
     let selectedValue = document.querySelector('input[name="guess"]:checked').value;
 
@@ -142,7 +142,7 @@ function resetSubmit(){
     // Allow checkguess to be made once sound is done
     notRun = true;
     // trigger new sound until turn limit reached
-    if (totalGuesses < 3){
+    if (totalGuesses < 10){
     // Allow playSound to be asigned new random sound
     selectedSound = '';
     playSound();
@@ -150,7 +150,7 @@ function resetSubmit(){
     }
     // clear graphic and Answer display
     
-    if (totalGuesses === 3){
+    if (totalGuesses === 10){
         endGame();
     }
     
@@ -191,7 +191,7 @@ function endGame() {
     scoreDisplay.textContent = correctGuesses.toString() + "/" + totalGuesses.toString();
 
     // determine if pass / try again
-    if (correctGuesses >= 1) {
+    if (correctGuesses >= 7) {
         document.getElementById('resultPassFail').textContent = "Pass"
         let nextLevel = document.getElementById('level2');
         nextLevel.style.display = 'block';
