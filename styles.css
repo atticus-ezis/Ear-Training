@@ -34,12 +34,14 @@ body {
 
 #game-container {
     max-width: 600px;
-    margin: 25% auto 0;
+    margin: 25% auto 0px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for better contrast */
     border-radius: 10px;
     position: relative;
     min-height: 400px;
+    margin-bottom: 20px;
+    margin-top: 700px;
 }
 
 #PlayInterval {
@@ -142,4 +144,34 @@ button#a-retry a {
     padding-bottom: 15px;
     margin-left: 0%;
     font-size: 20px;
+}
+
+iframe {
+    padding: 20px;
+    display: flex;
+}
+
+#iframecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-section {
+        text-align: center; /* Center the content horizontally */
+        background-color:rgba(251, 250, 250, 0.832) ; /* Set white background */
+        padding: 20px; /* Add some padding around the content */
+        margin-top: 20px; /* Add margin at the top to create a gap */
+        max-width: 600px; /* Limit the width of the section */
+        margin-left: auto; /* Center the section horizontally */
+        margin-right: auto; /* Center the section horizontally */
+}
+
+#about-title {
+    margin-bottom: 10px; /* Add space between the header and paragraph */
+}
+
+#intro-content {
+    margin: 0 auto; /* Center the paragraph horizontally */
+    max-width: 600px; /* Limit the width of the paragraph */
 }

@@ -14,11 +14,11 @@ const audio6_mp3 = 'https://ear--training.s3.us-west-1.amazonaws.com/Perfect+5th
 // level 2 sounds
 const audio7_mp3 = 'https://ear--training.s3.us-west-1.amazonaws.com/Maj+3rd+(up).mp3';
 const audio8_mp3 = 'https://ear--training.s3.us-west-1.amazonaws.com/Maj+3rd+(down).mp3';
-const audio9_mp3 = 'https://ear--training.s3.us-west-1.amazonaws.com/Maj+3rd+(up).mp3';
-const audio10_mp3 = 'https://ear--training.s3.us-west-1.amazonaws.com/Maj+3rd+(down).mp3';
+const audio9_mp3 = 'https://ear--training.s3.us-west-1.amazonaws.com/Minor+3rd+(up).mp3';
+const audio10_mp3 = 'https://ear--training.s3.us-west-1.amazonaws.com/Minor+3rd+(down).mp3';
 
 // Create the sounds array using the variables
-const sounds = [audio1_mp3, audio2_mp3, audio3_mp3, audio4_mp3, audio5_mp3, audio6_mp3];
+const sounds = [audio1_mp3, audio2_mp3, audio7_mp3, audio8_mp3, audio9_mp3, audio10_mp3];
 
 const sounds2 = [audio1_mp3, audio2_mp3, audio3_mp3, audio4_mp3, audio5_mp3, audio6_mp3, audio7_mp3, audio8_mp3, audio9_mp3, audio10_mp3];
 
